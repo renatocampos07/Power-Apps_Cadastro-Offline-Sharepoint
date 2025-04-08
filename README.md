@@ -1,29 +1,21 @@
-# Aplicativo de Cadastro de Clientes
+**Aplicativo de Cadastro de Clientes**  
+Este projeto é um aplicativo desenvolvido no **Power Apps** para gerenciar o cadastro de clientes. O app permite cadastrar, visualizar, editar e excluir registros de clientes, com integração a listas do **SharePoint** e suporte a uso offline.
 
-*Este projeto é um aplicativo desenvolvido no Power Apps para gerenciar o cadastro de clientes. Ele permite registrar, visualizar e editar informações de forma integrada com o SharePoint, incluindo suporte ao uso offline.*
+**🔧 Funcionalidades**  
+- **Cadastro de Clientes:** Adicione novos registros com nome, e-mail e endereço.  
+- **Edição e Exclusão:** Altere ou remova clientes cadastrados.  
+- **Visualização em Galeria:** Navegue pela lista de clientes com interface intuitiva.  
+- **Suporte Offline:** Use o app sem conexão à internet. As alterações são armazenadas localmente e sincronizadas automaticamente ao restabelecer a conexão.  
+- **Pesquisa:** Localize rapidamente clientes pelo nome ou e-mail.  
 
----
+**💡 Tecnologias Utilizadas**  
+- **Power Apps:** Plataforma de desenvolvimento low-code.  
+- **SharePoint:** Armazenamento de dados via listas.  
+- **Conexões de Dados:** Integração com listas do SharePoint como fonte de dados.  
 
-**Funcionalidades**
-
-- *Cadastro de Clientes:* Adicione novos registros com informações como nome, e-mail e endereço.
-- *Edição e Exclusão:* Atualize ou remova dados de clientes existentes.
-- *Visualização em Galeria:* Exiba todos os cadastros em uma galeria de fácil navegação.
-- *Suporte Offline:* O aplicativo funciona sem conexão. Os dados são sincronizados assim que a internet estiver disponível.
-- *Pesquisa:* Busque rapidamente por nome ou e-mail.
-
----
-
-**Tecnologias Utilizadas**
-
-- *Power Apps:* Criação da interface e lógica do aplicativo.
-- *SharePoint:* Armazenamento e sincronização dos dados.
-- *Data Sources:* Conectores utilizados para leitura e escrita nas listas do SharePoint.
-
----
-
-**Estrutura do Projeto**
-
-- Tela Inicial: exibe a galeria com os registros.
-- Tela de Cadastro: formulário para inclusão e edição de dados.
-- Lógica de Sincronização: uso de `SaveData`, `LoadData` e `Connection.Connected` para controle offline/online.
+**📁 Estrutura do Projeto**  
+A estrutura do aplicativo é composta por:  
+- **Formulário** de cadastro e edição.  
+- **Galeria** com visualização e busca.  
+- **Botões** com lógica condicional para salvar localmente ou sincronizar com o SharePoint.  
+- Uso de **SaveData** e **LoadData** para funcionalidade offline.
