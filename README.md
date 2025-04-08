@@ -1,22 +1,29 @@
 # Aplicativo de Cadastro de Clientes
 
-Este projeto é um aplicativo desenvolvido no Power Apps para gerenciar o cadastro de clientes. O aplicativo permite que os usuários cadastrem, visualizem e editem informações dos clientes, com integração com listas do SharePoint e suporte para uso offline.
+*Este projeto é um aplicativo desenvolvido no Power Apps para gerenciar o cadastro de clientes. Ele permite registrar, visualizar e editar informações de forma integrada com o SharePoint, incluindo suporte ao uso offline.*
 
-## Funcionalidades
+---
 
-- **Cadastro de Clientes**: Adicione novos clientes com informações como nome, e-mail e endereço.
-- **Edição e Exclusão**: Edite ou exclua registros de clientes existentes.
-- **Visualização em Galeria**: Visualize a lista de clientes cadastrados em uma galeria.
-- **Suporte Offline**: O aplicativo permite acesso e manipulação de dados mesmo sem conexão à internet. As alterações são sincronizadas quando a conexão é restabelecida.
-- **Pesquisa**: Pesquise rapidamente clientes cadastrados por nome ou e-mail.
+**Funcionalidades**
 
-## Tecnologias Utilizadas
+- *Cadastro de Clientes:* Adicione novos registros com informações como nome, e-mail e endereço.
+- *Edição e Exclusão:* Atualize ou remova dados de clientes existentes.
+- *Visualização em Galeria:* Exiba todos os cadastros em uma galeria de fácil navegação.
+- *Suporte Offline:* O aplicativo funciona sem conexão. Os dados são sincronizados assim que a internet estiver disponível.
+- *Pesquisa:* Busque rapidamente por nome ou e-mail.
 
-- **Power Apps**: Plataforma para desenvolvimento de aplicativos.
-- **SharePoint**: Armazenamento de dados em listas.
-- **Data Sources**: Conexões a listas do SharePoint para persistência de dados.
+---
 
-## Estrutura do Projeto
+**Tecnologias Utilizadas**
 
-A estrutura do projeto é organizada da seguinte maneira:
+- *Power Apps:* Criação da interface e lógica do aplicativo.
+- *SharePoint:* Armazenamento e sincronização dos dados.
+- *Data Sources:* Conectores utilizados para leitura e escrita nas listas do SharePoint.
 
+---
+
+**Estrutura do Projeto**
+
+- Tela Inicial: exibe a galeria com os registros.
+- Tela de Cadastro: formulário para inclusão e edição de dados.
+- Lógica de Sincronização: uso de `SaveData`, `LoadData` e `Connection.Connected` para controle offline/online.
